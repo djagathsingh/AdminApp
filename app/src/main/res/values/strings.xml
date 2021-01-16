@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AdminApp</string>
+    <string name="Jagath">Jagath</string>
+    <string name="already_have_an_account">You not the boss?</string>
+    <string name="wrong_credentials">You are an imposter. Get out!!</string>
+    <string name="register_failed">Sorry, couldn\'t onboard you, agent!!</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMain"
+    android:background="@drawable/bg">
+
+    <ImageButton
+        android:id="@+id/home_logout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="logout"/>
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/button_gradient"
+        android:gravity="center"
+        android:lineSpacingExtra="34sp"
+        android:paddingTop="10.5dp"
+        android:paddingBottom="5dp"
+        android:text="Insert agents"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="insertfunc"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="33dp" />
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/button_gradient"
+        android:gravity="center"
+        android:lineSpacingExtra="34sp"
+        android:paddingTop="10.5dp"
+        android:paddingBottom="5dp"
+        android:text="Update agents"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/update"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="updatefunc"
+        app:layout_constraintTop_toBottomOf="@+id/insert"/>
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/button_gradient"
+        android:gravity="center"
+        android:lineSpacingExtra="34sp"
+        android:paddingTop="10.5dp"
+        android:paddingBottom="5dp"
+        android:text="Delete agents"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/delete"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="deletefunc"
+        app:layout_constraintTop_toBottomOf="@+id/update"/>
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_gradient"
+        android:gravity="center"
+        android:lineSpacingExtra="34sp"
+        android:paddingTop="10.5dp"
+        android:paddingBottom="5dp"
+        android:text="Show agents"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="showfunc"
+        app:layout_constraintTop_toBottomOf="@+id/delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

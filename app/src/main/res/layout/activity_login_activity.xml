@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="47dp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="20sp"
+                android:text="Sign In"
+                android:textColor="#23203f"
+                android:textSize="25sp"
+                android:textStyle="normal" />
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:letterSpacing="0.0265"
+                android:text="Login if you the boss!!"
+                android:textColor="#6e6e73"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="29dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/login_img" />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif"
+                    android:hint="Username"
+                    android:textColor="#23203f"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    android:id="@+id/username"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/view_gray"
+                    />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.3dp"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingEnd="20dp"
+                    android:textColor="#9391a4"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    android:id="@+id/password"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/view_gray" />
+
+                <customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:id="@+id/wrong"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:lineSpacingExtra="26sp"
+                    android:text=""
+                    android:textColor="#9391a4"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginRight="33dp"
+                    android:background="@drawable/button_gradient"
+                    android:gravity="center"
+                    android:lineSpacingExtra="34sp"
+                    android:paddingTop="10.5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Login"
+                    android:clickable="true"
+                    android:onClick="loginFunc"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:id="@+id/login"
+                    android:focusable="true" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20.8dp"
+                        android:layout_marginBottom="30.5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:lineSpacingExtra="26sp"
+                        android:text="@string/already_have_an_account"
+                        android:textColor="#9391a4"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20.8dp"
+                        android:layout_marginBottom="30.5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:lineSpacingExtra="26sp"
+                        android:text="Register"
+                        android:id="@+id/register"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:clickable="true"
+                        android:onClick="registerFunc"
+                        android:focusable="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

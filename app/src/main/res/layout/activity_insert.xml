@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".InsertActivity">
+
+    <ImageButton
+        android:id="@+id/insert_logout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="logout"/>
+
+    <customfonts.EditText_Roboto_Bold
+        android:id="@+id/insert_username"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:fontFamily="sans-serif"
+        android:hint="Username"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/view_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert_username" />
+
+    <customfonts.EditText_Roboto_Bold
+        android:layout_marginTop="28dp"
+        android:background="@null"
+        android:textColor="#23203f"
+        android:textStyle="normal"
+        android:id="@+id/insert_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Password."
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/view_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert_password" />
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/insert_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:lineSpacingExtra="26sp"
+        android:text=""
+        android:textColor="#9391a4"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/insert_password" />
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/insert_insert"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_gradient"
+        android:clickable="true"
+        android:gravity="center"
+        android:lineSpacingExtra="34sp"
+        android:onClick="insertFunc"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:text="Insert"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
